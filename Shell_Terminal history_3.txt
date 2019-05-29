@@ -1,0 +1,1727 @@
+$ 127.0.0.1 netmask 0xff000000 
+
+inet6 ::1 prefixlen 128 
+
+inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
+
+nd6 options=201<PERFORMNUD,DAD>
+
+gif0: flags=8010<POINTOPOINT,MULTICAST> mtu 1280
+
+stf0: flags=0<> mtu 1280
+
+en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+
+ether f4:5c:89:9f:f5:39 
+
+inet6 fe80::77:9824:468a:1999%en0 prefixlen 64 secured scopeid 0x4 
+
+inet 10.0.1.3 netmask 0xffffff00 broadcast 10.0.1.255
+
+nd6 options=201<PERFORMNUD,DAD>
+
+media: autoselect
+
+status: active
+
+en1: flags=963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX> mtu 1500
+
+options=60<TSO4,TSO6>
+
+ether 4a:00:05:07:72:00 
+
+media: autoselect <full-duplex>
+
+status: inactive
+
+en2: flags=963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX> mtu 1500
+
+options=60<TSO4,TSO6>
+
+ether 4a:00:05:07:72:01 
+
+media: autoselect <full-duplex>
+
+status: inactive
+
+p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
+
+ether 06:5c:89:9f:f5:39 
+
+media: autoselect
+
+status: inactive
+
+awdl0: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1484
+
+ether d2:af:39:13:58:bd 
+
+inet6 fe80::d0af:39ff:fe13:58bd%awdl0 prefixlen 64 scopeid 0x8 
+
+nd6 options=201<PERFORMNUD,DAD>
+
+media: autoselect
+
+status: active
+
+bridge0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+
+options=63<RXCSUM,TXCSUM,TSO4,TSO6>
+
+ether 4a:00:05:07:72:00 
+
+Configuration:
+
+id 0:0:0:0:0:0 priority 0 hellotime 0 fwddelay 0
+
+maxage 0 holdcnt 0 proto stp maxaddr 100 timeout 1200
+
+root id 0:0:0:0:0:0 priority 0 ifcost 0 port 0
+
+ipfilter disabled flags 0x2
+
+member: en1 flags=3<LEARNING,DISCOVER>
+
+        ifmaxaddr 0 port 5 priority 0 path cost 0
+
+member: en2 flags=3<LEARNING,DISCOVER>
+
+        ifmaxaddr 0 port 6 priority 0 path cost 0
+
+nd6 options=201<PERFORMNUD,DAD>
+
+media: <unknown type>
+
+status: inactive
+
+utun0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 2000
+
+inet6 fe80::e7c9:a5f5:4460:ee2a%utun0 prefixlen 64 scopeid 0xa 
+
+nd6 options=201<PERFORMNUD,DAD>
+
+utun1: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+
+inet6 fe80::7db1:ece6:9bf0:169e%utun1 prefixlen 64 scopeid 0xb 
+
+nd6 options=201<PERFORMNUD,DAD>
+
+$ route -n
+
+usage: route [-dnqtv] command [[modifiers] args]
+
+$ route 
+
+usage: route [-dnqtv] command [[modifiers] args]
+
+$ route 
+
+usage: route [-dnqtv] command [[modifiers] args]
+
+ 
+
+$ man route
+
+$ nmap 192.168.1.0/24
+
+ 
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2019-02-12 11:48 EET
+
+ 
+
+$ ping 192.168.1.110
+
+PING 192.168.1.110 (192.168.1.110): 56 data bytes
+
+36 bytes from 10.0.1.1: Destination Net Unreachable
+
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+
+ 4  5  00 5400 935d   0 0000  40  01 1a33 10.0.1.3  192.168.1.110 
+
+ 
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 0
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 1
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 2
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 3
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 4
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 5
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 6
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 7
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 8
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 9
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 10
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 11
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 12
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 13
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 14
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 15
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 16
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 17
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 18
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 19
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 20
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 21
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 22
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 23
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 24
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 25
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 26
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 27
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 28
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 29
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 30
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 31
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 32
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 33
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 34
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 35
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 36
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 37
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 38
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 39
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 40
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 41
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 42
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 43
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 44
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 45
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 46
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 47
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 48
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 49
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 50
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 51
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 52
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 53
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 54
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 55
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 56
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 57
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 58
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 59
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 60
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 61
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 62
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 63
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 64
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 65
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 66
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 67
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 68
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 69
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 70
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 71
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 72
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 73
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 74
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 75
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 76
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 77
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 78
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 79
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 80
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 81
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 82
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 83
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 84
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 85
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 86
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 87
+
+ping: sendto: No route to host
+
+Request timeout for icmp_seq 88
+
+^C
+
+--- 192.168.1.110 ping statistics ---
+
+90 packets transmitted, 0 packets received, 100.0% packet loss
+
+$ 
+
+$ 
+
+$ ping goole.lv
+
+ping: cannot resolve goole.lv: Unknown host
+
+$ ping google.lv
+
+ping: cannot resolve google.lv: Unknown host
+
+$ ping goole.lv
+
+ping: cannot resolve goole.lv: Unknown host
+
+$ ping google.lv
+
+ping: cannot resolve google.lv: Unknown host
+
+$ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+$ ping 213.175.92.37
+
+PING 213.175.92.37 (213.175.92.37): 56 data bytes
+
+Request timeout for icmp_seq 0
+
+Request timeout for icmp_seq 1
+
+Request timeout for icmp_seq 2
+
+Request timeout for icmp_seq 3
+
+Request timeout for icmp_seq 4
+
+Request timeout for icmp_seq 5
+
+Request timeout for icmp_seq 6
+
+Request timeout for icmp_seq 7
+
+Request timeout for icmp_seq 8
+
+Request timeout for icmp_seq 9
+
+Request timeout for icmp_seq 10
+
+Request timeout for icmp_seq 11
+
+Request timeout for icmp_seq 12
+
+Request timeout for icmp_seq 13
+
+Request timeout for icmp_seq 14
+
+^C
+
+--- 213.175.92.37 ping statistics ---
+
+16 packets transmitted, 0 packets received, 100.0% packet loss
+
+$ ping 213.175.92.37
+
+PING 213.175.92.37 (213.175.92.37): 56 data bytes
+
+Request timeout for icmp_seq 0
+
+Request timeout for icmp_seq 1
+
+Request timeout for icmp_seq 2
+
+Request timeout for icmp_seq 3
+
+Request timeout for icmp_seq 4
+
+Request timeout for icmp_seq 5
+
+Request timeout for icmp_seq 6
+
+Request timeout for icmp_seq 7
+
+^C
+
+--- 213.175.92.37 ping statistics ---
+
+9 packets transmitted, 0 packets received, 100.0% packet loss
+
+$ ping 213.175.92.37
+
+PING 213.175.92.37 (213.175.92.37): 56 data bytes
+
+64 bytes from 213.175.92.37: icmp_seq=0 ttl=62 time=70.674 ms
+
+64 bytes from 213.175.92.37: icmp_seq=1 ttl=62 time=132.593 ms
+
+64 bytes from 213.175.92.37: icmp_seq=2 ttl=62 time=164.998 ms
+
+64 bytes from 213.175.92.37: icmp_seq=3 ttl=62 time=219.597 ms
+
+64 bytes from 213.175.92.37: icmp_seq=4 ttl=62 time=31.912 ms
+
+64 bytes from 213.175.92.37: icmp_seq=5 ttl=62 time=2.656 ms
+
+64 bytes from 213.175.92.37: icmp_seq=6 ttl=62 time=2.655 ms
+
+64 bytes from 213.175.92.37: icmp_seq=7 ttl=62 time=2.058 ms
+
+64 bytes from 213.175.92.37: icmp_seq=8 ttl=62 time=2.445 ms
+
+64 bytes from 213.175.92.37: icmp_seq=9 ttl=62 time=5.482 ms
+
+^C
+
+--- 213.175.92.37 ping statistics ---
+
+10 packets transmitted, 10 packets received, 0.0% packet loss
+
+round-trip min/avg/max/stddev = 2.058/63.507/219.597/76.658 ms
+
+$ date
+
+Tue Feb 12 12:02:42 EET 2019
+
+$ awk
+
+usage: awk [-F fs] [-v var=value] [-f progfile | 'prog'] [file ...]
+
+$ ping 192.168.1.110
+
+PING 192.168.1.110 (192.168.1.110): 56 data bytes
+
+Request timeout for icmp_seq 0
+
+Request timeout for icmp_seq 1
+
+Request timeout for icmp_seq 2
+
+Request timeout for icmp_seq 3
+
+Request timeout for icmp_seq 4
+
+^C
+
+--- 192.168.1.110 ping statistics ---
+
+6 packets transmitted, 0 packets received, 100.0% packet loss
+
+$ ping 213.175.92.37
+
+PING 213.175.92.37 (213.175.92.37): 56 data bytes
+
+64 bytes from 213.175.92.37: icmp_seq=0 ttl=62 time=18.514 ms
+
+64 bytes from 213.175.92.37: icmp_seq=1 ttl=62 time=3.778 ms
+
+64 bytes from 213.175.92.37: icmp_seq=2 ttl=62 time=11.755 ms
+
+^C
+
+--- 213.175.92.37 ping statistics ---
+
+3 packets transmitted, 3 packets received, 0.0% packet loss
+
+round-trip min/avg/max/stddev = 3.778/11.349/18.514/6.023 ms
+
+$ ping google.lv
+
+PING google.lv (172.217.21.131): 56 data bytes
+
+64 bytes from 172.217.21.131: icmp_seq=0 ttl=52 time=11.261 ms
+
+64 bytes from 172.217.21.131: icmp_seq=1 ttl=52 time=51.969 ms
+
+^C
+
+--- google.lv ping statistics ---
+
+2 packets transmitted, 2 packets received, 0.0% packet loss
+
+round-trip min/avg/max/stddev = 11.261/31.615/51.969/20.354 ms
+
+$ ping google.in
+
+PING google.in (216.58.211.4): 56 data bytes
+
+64 bytes from 216.58.211.4: icmp_seq=0 ttl=52 time=42.722 ms
+
+64 bytes from 216.58.211.4: icmp_seq=1 ttl=52 time=55.723 ms
+
+64 bytes from 216.58.211.4: icmp_seq=2 ttl=52 time=58.193 ms
+
+^C
+
+--- google.in ping statistics ---
+
+3 packets transmitted, 3 packets received, 0.0% packet loss
+
+round-trip min/avg/max/stddev = 42.722/52.213/58.193/6.786 ms
+
+$ ping google.mx
+
+PING google.mx (216.58.211.3): 56 data bytes
+
+64 bytes from 216.58.211.3: icmp_seq=0 ttl=52 time=13.657 ms
+
+64 bytes from 216.58.211.3: icmp_seq=1 ttl=52 time=13.462 ms
+
+64 bytes from 216.58.211.3: icmp_seq=2 ttl=52 time=45.677 ms
+
+64 bytes from 216.58.211.3: icmp_seq=3 ttl=52 time=12.769 ms
+
+^C
+
+--- google.mx ping statistics ---
+
+4 packets transmitted, 4 packets received, 0.0% packet loss
+
+round-trip min/avg/max/stddev = 12.769/21.391/45.677/14.025 ms
+
+$ 
+
+$ 
+
+$ dig 216.58.211.3
+
+ 
+
+; <<>> DiG 9.8.3-P1 <<>> 216.58.211.3
+
+;; global options: +cmd
+
+;; Got answer:
+
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 29453
+
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+
+ 
+
+;; QUESTION SECTION:
+
+;216.58.211.3. IN A
+
+ 
+
+;; Query time: 73 msec
+
+;; SERVER: 78.154.142.11#53(78.154.142.11)
+
+;; WHEN: Tue Feb 12 12:14:42 2019
+
+;; MSG SIZE  rcvd: 30
+
+ 
+
+$ man dig
+
+$ nslookup 
+
+> ping
+
+;; Got SERVFAIL reply from 78.154.142.11, trying next server
+
+;; Got SERVFAIL reply from 78.154.142.12, trying next server
+
+Server: 8.8.8.8
+
+Address: 8.8.8.8#53
+
+ 
+
+Non-authoritative answer:
+
+*** Can't find ping: No answer
+
+> man 
+
+;; Got SERVFAIL reply from 78.154.142.11, trying next server
+
+;; Got SERVFAIL reply from 78.154.142.12, trying next server
+
+Server: 8.8.8.8
+
+Address: 8.8.8.8#53
+
+ 
+
+Non-authoritative answer:
+
+*** Can't find man: No answer
+
+> ls
+
+The 'ls' command is not implemented.
+
+> ^D
+
+$ man bash
+
+$ 
+
+$ trace google.mx
+
+Failed to open code description file google.mx
+
+$ trace google.mx
+
+trace        traceroute   traceroute6  
+
+$ traceroute google.mx
+
+traceroute to google.mx (216.58.207.195), 64 hops max, 52 byte packets
+
+ 1  10.0.1.1 (10.0.1.1)  1.488 ms  1.157 ms  1.053 ms
+
+ 2  192.168.88.1 (192.168.88.1)  4.682 ms  2.526 ms  5.138 ms
+
+ 3  213.175.92.254 (213.175.92.254)  2.555 ms  4.402 ms  3.097 ms
+
+ 4  85.254.88.10 (85.254.88.10)  2.930 ms  4.049 ms  3.767 ms
+
+ 5  85.254.88.9 (85.254.88.9)  2.634 ms  7.096 ms  2.830 ms
+
+ 6  195.122.22.241 (195.122.22.241)  2.706 ms  3.515 ms  3.935 ms
+
+ 7  72.14.217.142 (72.14.217.142)  10.226 ms  230.309 ms  8.863 ms
+
+ 8  108.170.254.33 (108.170.254.33)  15.228 ms  15.881 ms
+
+    108.170.254.49 (108.170.254.49)  15.451 ms
+
+ 9  209.85.246.27 (209.85.246.27)  13.783 ms
+
+    209.85.246.57 (209.85.246.57)  14.954 ms  15.870 ms
+
+10  arn11s04-in-f3.1e100.net (216.58.207.195)  10.378 ms  149.374 ms  10.723 ms
+
+$ traceroute google.fr
+
+traceroute to google.fr (216.58.211.3), 64 hops max, 52 byte packets
+
+ 1  10.0.1.1 (10.0.1.1)  3.760 ms  1.442 ms  3.670 ms
+
+ 2  192.168.88.1 (192.168.88.1)  2.855 ms  2.108 ms  3.143 ms
+
+ 3  213.175.92.254 (213.175.92.254)  3.159 ms  3.324 ms  4.224 ms
+
+ 4  85.254.88.10 (85.254.88.10)  3.666 ms  12.608 ms  234.113 ms
+
+ 5  85.254.88.9 (85.254.88.9)  3.702 ms  5.153 ms  2.602 ms
+
+ 6  195.122.22.241 (195.122.22.241)  2.616 ms  17.727 ms  3.544 ms
+
+ 7  72.14.217.142 (72.14.217.142)  9.135 ms  10.856 ms  9.404 ms
+
+ 8  108.170.253.161 (108.170.253.161)  11.382 ms  11.759 ms
+
+    108.170.253.177 (108.170.253.177)  11.802 ms
+
+ 9  209.85.241.225 (209.85.241.225)  11.521 ms
+
+    209.85.241.29 (209.85.241.29)  43.321 ms
+
+    209.85.241.225 (209.85.241.225)  11.628 ms
+
+10  muc03s13-in-f3.1e100.net (216.58.211.3)  13.221 ms  12.845 ms  13.001 ms
+
+$ nmap 192.168.88.0/24
+
+ 
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2019-02-12 12:27 EET
+
+ 
+
+$ nmap 192.168.88.29/32
+
+ 
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2019-02-12 12:28 EET
+
+ 
+
+$ ping 192.168.88.29
+
+PING 192.168.88.29 (192.168.88.29): 56 data bytes
+
+64 bytes from 192.168.88.29: icmp_seq=0 ttl=63 time=2.315 ms
+
+64 bytes from 192.168.88.29: icmp_seq=1 ttl=63 time=2.958 ms
+
+64 bytes from 192.168.88.29: icmp_seq=2 ttl=63 time=3.759 ms
+
+^C
+
+--- 192.168.88.29 ping statistics ---
+
+3 packets transmitted, 3 packets received, 0.0% packet loss
+
+round-trip min/avg/max/stddev = 2.315/3.011/3.759/0.591 ms
+
+$ ssh user@192.168.88.29
+
+The authenticity of host '192.168.88.29 (192.168.88.29)' can't be established.
+
+ECDSA key fingerprint is SHA256:eCYSS+S8RaYqO7QkW/fS1cm4vttThd8LmdsshuODxF4.
+
+Are you sure you want to continue connecting (yes/no)? yes
+
+Warning: Permanently added '192.168.88.29' (ECDSA) to the list of known hosts.
+
+user@192.168.88.29's password: 
+
+Permission denied, please try again.
+
+user@192.168.88.29's password: 
+
+Linux a12-203 4.9.0-8-amd64 #1 SMP Debian 4.9.110-3+deb9u6 (2018-10-08) x86_64
+
+ 
+
+The programs included with the Debian GNU/Linux system are free software;
+
+the exact distribution terms for each program are described in the
+
+individual files in /usr/share/doc/*/copyright.
+
+ 
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+
+permitted by applicable law.
+
+Last login: Tue Feb 12 05:30:28 2019 from 192.168.88.39
+
+user@a12-203:~$ ls
+
+555-w15  a.txt  clear    Documents  miniconda3  Public            sharooq    tmp
+
+ABC      bin    c.txt    Downloads  Music       R                 Templates  Videos
+
+a.c      b.txt  develop  file.txt   Pictures    RAE473_FALL 2018  test.xml   weka.log
+
+user@a12-203:~$ pwd
+
+/home/user
+
+user@a12-203:~$ sudo sc
+
+[sudo] password for user: 
+
+Sorry, try again.
+
+[sudo] password for user: 
+
+Sorry, try again.
+
+[sudo] password for user: 
+
+sudo: sc: command not found
+
+user@a12-203:~$ logout
+
+Connection to 192.168.88.29 closed.
+
+$ ssh sc@192.168.88.29
+
+sc@192.168.88.29's password: 
+
+Linux a12-203 4.9.0-8-amd64 #1 SMP Debian 4.9.110-3+deb9u6 (2018-10-08) x86_64
+
+ 
+
+The programs included with the Debian GNU/Linux system are free software;
+
+the exact distribution terms for each program are described in the
+
+individual files in /usr/share/doc/*/copyright.
+
+ 
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+
+permitted by applicable law.
+
+Last login: Thu Nov  1 08:46:22 2018
+
+sc@a12-203:~$ whoami
+
+sc
+
+sc@a12-203:~$ sudo apt install trace
+
+trace-cmd      traceroute     trace-summary  
+
+sc@a12-203:~$ sudo apt install trace
+
+trace-cmd      traceroute     trace-summary  
+
+sc@a12-203:~$ sudo apt install traceroute
+
+[sudo] password for sc: 
+
+Reading package lists... Done
+
+Building dependency tree       
+
+Reading state information... Done
+
+The following packages were automatically installed and are no longer required:
+
+  libdirectfb-1.2-9 libgles1-mesa libiso9660-8 libvcdinfo0 libvlccore8
+
+Use 'sudo apt autoremove' to remove them.
+
+The following NEW packages will be installed:
+
+  traceroute
+
+0 upgraded, 1 newly installed, 0 to remove and 142 not upgraded.
+
+Need to get 55.3 kB of archives.
+
+After this operation, 158 kB of additional disk space will be used.
+
+Get:1 https://cdn-aws.deb.debian.org/debian stretch/main amd64 traceroute amd64 1:2.1.0-2 [55.3 kB]
+
+Fetched 55.3 kB in 4s (12.1 kB/s)
+
+Selecting previously unselected package traceroute.
+
+(Reading database ... 129258 files and directories currently installed.)
+
+Preparing to unpack .../traceroute_1%3a2.1.0-2_amd64.deb ...
+
+Unpacking traceroute (1:2.1.0-2) ...
+
+Processing triggers for man-db (2.7.6.1-2) ...
+
+Setting up traceroute (1:2.1.0-2) ...
+
+update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute (traceroute) in auto mode
+
+update-alternatives: using /usr/bin/traceroute6.db to provide /usr/bin/traceroute6 (traceroute6) in auto mode
+
+update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft (lft) in auto mode
+
+update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto (traceproto) in auto mode
+
+update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute (tcptraceroute) in auto mode
+
+sc@a12-203:~$ trace
+
+traceproto        traceroute        traceroute6.db    traceroute-nanog  
+
+traceproto.db     traceroute6       traceroute.db     
+
+sc@a12-203:~$ traceroute 213.175.92.37
+
+traceroute to 213.175.92.37 (213.175.92.37), 30 hops max, 60 byte packets
+
+ 1  router (192.168.88.1)  0.420 ms  0.436 ms  0.484 ms
+
+ 2  * * *
+
+ 3  * * *
+
+ 4  * * *
+
+ 5  * * *
+
+ 6  * 213.175.92.37 (213.175.92.37)  2.977 ms  2.965 ms
+
+sc@a12-203:~$ traceroute google.al
+
+traceroute to google.al (172.217.21.164), 30 hops max, 60 byte packets
+
+ 1  router (192.168.88.1)  0.387 ms  0.422 ms  0.448 ms
+
+ 2  213.175.92.254 (213.175.92.254)  1.383 ms  1.982 ms  2.656 ms
+
+ 3  85.254.88.10 (85.254.88.10)  1.547 ms  1.607 ms  1.715 ms
+
+ 4  85.254.88.9 (85.254.88.9)  1.464 ms  1.511 ms  1.494 ms
+
+ 5  195.122.22.241 (195.122.22.241)  1.496 ms  1.529 ms  1.530 ms
+
+ 6  72.14.217.142 (72.14.217.142)  7.819 ms  7.387 ms  7.365 ms
+
+ 7  108.170.254.49 (108.170.254.49)  12.641 ms  12.534 ms  12.509 ms
+
+ 8  209.85.242.11 (209.85.242.11)  10.013 ms  10.022 ms 108.170.233.41 (108.170.233.41)  9.740 ms
+
+ 9  fra07s64-in-f164.1e100.net (172.217.21.164)  8.955 ms  8.961 ms  8.959 ms
+
+sc@a12-203:~$ w
+
+ 05:35:43 up 51 min,  4 users,  load average: 0.03, 0.08, 0.03
+
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+
+user     tty7     :0               04:45   50:58  52.76s  1.13s /usr/bin/openbox --startup /usr/
+
+user     pts/1    192.168.88.38    05:31    2:07   0.08s  0.08s -bash
+
+user     pts/2    192.168.88.39    05:30    1:11   0.09s  0.09s -bash
+
+sc       pts/3    192.168.88.39    05:31    0.00s  0.23s  0.00s w
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+sc@a12-203:~$ ifconfig 
+
+enp5s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+
+        inet 192.168.88.29  netmask 255.255.255.0  broadcast 192.168.88.255
+
+        inet6 fe80::6a72:ce58:87f0:de5f  prefixlen 64  scopeid 0x20<link>
+
+        ether 00:30:05:ae:28:b7  txqueuelen 1000  (Ethernet)
+
+        RX packets 16665  bytes 1750348 (1.6 MiB)
+
+        RX errors 0  dropped 0  overruns 0  frame 0
+
+        TX packets 9643  bytes 838244 (818.5 KiB)
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+        device interrupt 17  
+
+ 
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+
+        inet 127.0.0.1  netmask 255.0.0.0
+
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+
+        loop  txqueuelen 1  (Local Loopback)
+
+        RX packets 584  bytes 46824 (45.7 KiB)
+
+        RX errors 0  dropped 0  overruns 0  frame 0
+
+        TX packets 584  bytes 46824 (45.7 KiB)
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ 
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+sc@a12-203:~$ date
+
+Tue Feb 12 05:39:48 EST 2019
+
+sc@a12-203:~$ date
+
+Tue Feb 12 05:40:07 EST 2019
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+user     pts/6        2019-02-12 05:39 (192.168.88.29)
+
+user     pts/7        2019-02-12 05:39 (192.168.88.27)
+
+user     pts/8        2019-02-12 05:39 (192.168.88.39)
+
+user     pts/9        2019-02-12 05:39 (192.168.88.36)
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+user     pts/6        2019-02-12 05:39 (192.168.88.29)
+
+user     pts/7        2019-02-12 05:39 (192.168.88.27)
+
+user     pts/8        2019-02-12 05:39 (192.168.88.39)
+
+user     pts/9        2019-02-12 05:39 (192.168.88.36)
+
+user     pts/10       2019-02-12 05:40 (192.168.88.28)
+
+user     pts/11       2019-02-12 05:40 (192.168.88.39)
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+user     pts/6        2019-02-12 05:39 (192.168.88.29)
+
+user     pts/7        2019-02-12 05:39 (192.168.88.27)
+
+user     pts/8        2019-02-12 05:39 (192.168.88.39)
+
+user     pts/9        2019-02-12 05:39 (192.168.88.36)
+
+user     pts/10       2019-02-12 05:40 (192.168.88.28)
+
+user     pts/11       2019-02-12 05:40 (192.168.88.39)
+
+user     pts/12       2019-02-12 05:41 (192.168.88.39)
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+user     pts/6        2019-02-12 05:39 (192.168.88.29)
+
+user     pts/7        2019-02-12 05:39 (192.168.88.27)
+
+user     pts/8        2019-02-12 05:39 (192.168.88.39)
+
+user     pts/9        2019-02-12 05:39 (192.168.88.36)
+
+user     pts/10       2019-02-12 05:40 (192.168.88.28)
+
+user     pts/11       2019-02-12 05:40 (192.168.88.39)
+
+user     pts/12       2019-02-12 05:41 (192.168.88.39)
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+user     pts/6        2019-02-12 05:39 (192.168.88.29)
+
+user     pts/7        2019-02-12 05:39 (192.168.88.27)
+
+user     pts/8        2019-02-12 05:39 (192.168.88.39)
+
+user     pts/9        2019-02-12 05:39 (192.168.88.36)
+
+user     pts/10       2019-02-12 05:40 (192.168.88.28)
+
+user     pts/11       2019-02-12 05:40 (192.168.88.39)
+
+user     pts/12       2019-02-12 05:41 (192.168.88.39)
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+user     pts/6        2019-02-12 05:39 (192.168.88.29)
+
+user     pts/7        2019-02-12 05:39 (192.168.88.27)
+
+user     pts/8        2019-02-12 05:39 (192.168.88.39)
+
+user     pts/9        2019-02-12 05:39 (192.168.88.36)
+
+user     pts/10       2019-02-12 05:40 (192.168.88.28)
+
+user     pts/11       2019-02-12 05:40 (192.168.88.39)
+
+user     pts/12       2019-02-12 05:41 (192.168.88.39)
+
+sc@a12-203:~$ who
+
+user     tty7         2019-02-12 04:45 (:0)
+
+user     pts/1        2019-02-12 05:31 (192.168.88.38)
+
+user     pts/2        2019-02-12 05:30 (192.168.88.39)
+
+sc       pts/3        2019-02-12 05:31 (192.168.88.39)
+
+user     pts/4        2019-02-12 05:37 (192.168.88.25)
+
+user     pts/5        2019-02-12 05:37 (192.168.88.39)
+
+user     pts/6        2019-02-12 05:39 (192.168.88.29)
+
+user     pts/7        2019-02-12 05:39 (192.168.88.27)
+
+user     pts/8        2019-02-12 05:39 (192.168.88.39)
+
+user     pts/9        2019-02-12 05:39 (192.168.88.36)
+
+user     pts/10       2019-02-12 05:40 (192.168.88.28)
+
+user     pts/11       2019-02-12 05:40 (192.168.88.39)
+
+user     pts/12       2019-02-12 05:41 (192.168.88.39)
+
+sc@a12-203:~$ top
+
+ 
+
+top - 05:43:20 up 58 min, 13 users,  load average: 0.14, 0.06, 0.01
+
+Tasks: 181 total,   1 running, 180 sleeping,   0 stopped,   0 zombie
+
+%Cpu(s):  2.0 us,  3.2 sy,  0.0 ni, 94.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+
+KiB Mem :  2043152 total,  1242324 free,   279464 used,   521364 buff/cache
+
+KiB Swap:  3014652 total,  3014652 free,        0 used.  1555812 avail Mem 
+
+ 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                     
+
+ 3060 user      20   0   25752   4884   3020 S   2.3  0.2   0:01.11 htop                        
+
+ 3067 user      20   0   44916   3676   3048 S   1.3  0.2   0:00.04 top                         
+
+  518 root      20   0  301656  28044  18692 S   1.0  1.4   0:56.51 Xorg                        
+
+ 3059 user      20   0   44920   3408   2760 S   1.0  0.2   0:00.44 top                         
+
+ 3062 user      20   0   44920   3756   3116 S   1.0  0.2   0:00.25 top                         
+
+ 3065 user      20   0   44916   3588   2964 S   1.0  0.2   0:00.19 top                         
+
+ 3066 user      20   0   44944   3440   2760 S   1.0  0.2   0:00.11 top                         
+
+  724 user      20   0  543332  10736   8332 S   0.7  0.5   0:26.08 conky                       
+
+ 3063 user      20   0   44948   3740   3056 S   0.7  0.2   0:00.23 top                         
+
+ 1151 user      20   0  709616  65240  35912 S   0.3  3.2   0:05.01 x-terminal-emul             
+
+ 1235 root      20   0       0      0      0 S   0.3  0.0   0:00.14 kworker/u4:2                
+
+ 3056 sc        20   0   44920   3584   2956 R   0.3  0.2   0:00.47 top                         
+
+    1 root      20   0  139096   6844   5136 S   0.0  0.3   0:01.59 systemd                     
+
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd                    
+
+    3 root      20   0       0      0      0 S   0.0  0.0   0:00.02 ksoftirqd/0                 
+
+    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                
+
+    7 root      20   0       0      0      0 S   0.0  0.0   0:00.53 rcu_sched                   
+
+    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                      
+
+    9 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 migration/0                 
+
+   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain               
+
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/0                  
+
+   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0                     
+
+sc@a12-203:~$ man top
+
+sc@a12-203:~$ top
+
+ 
+
+top - 05:43:55 up 59 min, 13 users,  load average: 0.08, 0.05, 0.01
+
+Tasks: 187 total,   1 running, 186 sleeping,   0 stopped,   0 zombie
+
+%Cpu(s):  1.5 us,  2.1 sy,  0.0 ni, 96.2 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+
+KiB Mem :  2043152 total,  1239248 free,   281376 used,   522528 buff/cache
+
+KiB Swap:  3014652 total,  3014652 free,        0 used.  1553528 avail Mem 
+
+ 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                     
+
+ 3060 user      20   0   25752   4884   3020 S   1.7  0.2   0:02.03 htop                        
+
+  518 root      20   0  301980  28044  18692 S   1.0  1.4   0:56.82 Xorg                        
+
+ 3154 sc        20   0   44920   3724   3096 R   1.0  0.2   0:00.09 top                         
+
+  724 user      20   0  543332  10736   8332 S   0.7  0.5   0:26.36 conky                       
+
+ 2989 user      20   0   97296   3996   3024 S   0.7  0.2   0:00.03 sshd                        
+
+  697 user      20   0   88728   7012   4704 S   0.3  0.3   0:09.14 compton                     
+
+  709 user      20   0  438000  28456  19212 S   0.3  1.4   0:09.91 clipit                      
+
+ 2909 user      20   0   97296   4344   3372 S   0.3  0.2   0:00.02 sshd                        
+
+ 3027 user      20   0   97296   4112   3136 S   0.3  0.2   0:00.09 sshd                        
+
+ 3058 root      20   0       0      0      0 S   0.3  0.0   0:00.06 kworker/u4:1                
+
+ 3148 user      20   0    8200    904    800 S   0.3  0.0   0:00.01 pager                       
+
+    1 root      20   0  139096   6844   5136 S   0.0  0.3   0:01.59 systemd                     
+
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd                    
+
+    3 root      20   0       0      0      0 S   0.0  0.0   0:00.02 ksoftirqd/0                 
+
+    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                
+
+    7 root      20   0       0      0      0 S   0.0  0.0   0:00.54 rcu_sched                   
+
+    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                      
+
+    9 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 migration/0                 
+
+   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain               
+
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/0                  
+
+   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0                     
+
+   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1                     
+
+sc@a12-203:~$ man top
+
+sc@a12-203:~$ top
+
+ 
+
+top - 05:49:00 up  1:04, 14 users,  load average: 0.06, 0.08, 0.02
+
+Tasks: 179 total,   1 running, 178 sleeping,   0 stopped,   0 zombie
+
+%Cpu(s):  2.1 us,  2.0 sy,  0.0 ni, 95.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+
+KiB Mem :  2043152 total,  1239980 free,   280492 used,   522680 buff/cache
+
+KiB Swap:  3014652 total,  3014652 free,        0 used.  1554404 avail Mem 
+
+ 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                     
+
+ 3301 user      20   0   24828   3932   2976 S   1.3  0.2   0:00.82 htop                        
+
+ 3323 user      20   0   25396   4408   2896 S   1.3  0.2   0:00.11 htop                        
+
+  724 user      20   0  543332  10736   8332 S   1.0  0.5   0:28.72 conky                       
+
+ 3275 sc        20   0   44920   3688   3060 R   1.0  0.2   0:01.44 top                         
+
+ 3296 user      20   0   44920   3764   3124 S   1.0  0.2   0:01.26 top                         
+
+  518 root      20   0  302376  28172  18816 S   0.7  1.4   0:59.81 Xorg                        
+
+ 3276 user      20   0   44920   3632   2940 S   0.7  0.2   0:01.72 top                         
+
+  697 user      20   0   88728   7012   4704 S   0.3  0.3   0:09.52 compton                     
+
+  709 user      20   0  438000  28456  19212 S   0.3  1.4   0:10.76 clipit                      
+
+ 3319 user      20   0   44920   3652   3016 S   0.3  0.2   0:00.30 top                         
+
+    1 root      20   0  139096   6844   5136 S   0.0  0.3   0:01.61 systemd                     
+
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd                    
+
+    3 root      20   0       0      0      0 S   0.0  0.0   0:00.04 ksoftirqd/0                 
+
+    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                
+
+    7 root      20   0       0      0      0 S   0.0  0.0   0:00.67 rcu_sched                   
+
+    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                      
+
+    9 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 migration/0                 
+
+   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain               
+
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/0                  
+
+   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0                     
+
+   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1                     
+
+   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/1                  
+
+sc@a12-203:~$ htop
+
+sc@a12-203:~$ mc
+
+ 
+
+sc@a12-203:~$ mc
+
+ 
+
+sc@a12-203:~$ mc
+
+ 
+
+sc@a12-203:~$ mc
+
+ 
+
+sc@a12-203:~$ mc
+
+ 
+
+sc@a12-203:~$ mc
+
+ 
+
+sc@a12-203:/home/user$ ls
+
+555-w15  catme      file.txt    Public            tmp
+
+ABC      clear      holamundo   R                 Videos
+
+a.c      c.txt      jajatl      RAE473_FALL 2018  weka.log
+
+a.txt    develop    miniconda3  sharooq
+
+bin      Documents  Music       Templates
+
+b.txt    Downloads  Pictures    test.xml
+
+sc@a12-203:/home/user$ 
+
+sc@a12-203:/home/user$ ls
+
+555-w15  b.txt        develop    holamundo   Pictures          Templates  weka.log
+
+ABC      catme        Documents  jajatl      Public            Test.
+
+a.c      Chimichanga  Downloads  miniconda3  R                 test.xml
+
+a.txt    clear        EE         Music       RAE473_FALL 2018  tmp
+
+bin      c.txt        file.txt   newdir      sharooq           Videos
+
+sc@a12-203:/home/user$ 
+
+sc@a12-203:/home/user$ 
+
+Select an editor.  To change later, run 'select-editor'.
+
+  1. /bin/nano        <---- easiest
+
+  2. /usr/bin/code
+
+  3. /usr/bin/mcedit
+
+  4. /usr/bin/vim.basic
+
+  5. /usr/bin/vim.tiny
+
+ 
+
+Choose 1-5 [1]: 4
+
+ 
+
+sc@a12-203:/home/user/Ahoooi$ cd
+
+sc@a12-203:~$ pwd
+
+/home/sc
+
+sc@a12-203:~$ 
+
+sc@a12-203:~$ touch a.txt
+
+sc@a12-203:~$ ls
+
+a.txt      Downloads     Music     R          Videos
+
+bin        IdeaProjects  Pictures  Templates
+
+Documents  miniconda3    Public    tmp
+
+sc@a12-203:~$ touch b.txt
+
+sc@a12-203:~$ ls
+
+a.txt  Documents     miniconda3  Public     tmp
+
+bin    Downloads     Music       R          Videos
+
+b.txt  IdeaProjects  Pictures    Templates
+
+sc@a12-203:~$ > c.txt
+
+sc@a12-203:~$ ls
+
+a.txt  c.txt      IdeaProjects  Pictures  Templates
+
+bin    Documents  miniconda3    Public    tmp
+
+b.txt  Downloads  Music         R         Videos
+
+sc@a12-203:~$ > d.txt
+
+sc@a12-203:~$ ls
+
+a.txt  Documents     miniconda3  R
+
+bin    Downloads     Music       Templates
+
+b.txt  d.txt         Pictures    tmp
+
+c.txt  IdeaProjects  Public      Videos
+
+sc@a12-203:~$ date
+
+Tue Feb 12 06:03:51 EST 2019
+
+sc@a12-203:~$ date
+
+Tue Feb 12 06:04:28 EST 2019
+
+sc@a12-203:~$ date
+
+Tue Feb 12 06:07:21 EST 2019
+
+sc@a12-203:~$ 
+
+sc@a12-203:~$ logout
+
+Connection to 192.168.88.29 closed.
